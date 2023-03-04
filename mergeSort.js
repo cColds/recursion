@@ -1,14 +1,10 @@
 function merge(low, high) {
 	const mergeArray = [];
-	while (low[0] != null || high[0] != null) {
-		if (low[0] == null || high[0] == null) {
-			mergeArray.push(low[0] == null ? high.shift() : low.shift());
-		} else {
-			mergeArray.push(low[0] > high[0] ? high.shift() : low.shift());
-		}
+	while (low.length && high.length) {
+		mergeArray.push(low[0] > high[0] ? high.shift() : low.shift());
 	}
 
-	return mergeArray;
+	return mergeArray.concat(low, high);
 }
 
 function mergeSort(array) {
