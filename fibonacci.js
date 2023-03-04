@@ -26,13 +26,13 @@ function recursiveFibonacci(n, sequence = [0, 1]) {
 }
 
 console.log(iterativeFibonacci(0)); // "Must be an integer of 1 or greater"
-console.log(iterativeFibonacci(1)); //  [0]
+console.log(iterativeFibonacci(1)); // [0]
 console.log(iterativeFibonacci(4)); // [0, 1, 1, 2]
 console.log(iterativeFibonacci(8)); // [0, 1, 1, 2, 3, 5, 8, 13]
 console.log(iterativeFibonacci(15)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
 
 console.log(recursiveFibonacci(0)); // "Must be an integer of 1 or greater"
-console.log(recursiveFibonacci(1)); //  [0]
+console.log(recursiveFibonacci(1)); // [0]
 console.log(recursiveFibonacci(4)); // [0, 1, 1, 2]
 console.log(recursiveFibonacci(8)); // [0, 1, 1, 2, 3, 5, 8, 13]
 console.log(recursiveFibonacci(15)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
