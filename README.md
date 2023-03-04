@@ -12,3 +12,4 @@ Recursive solutions to [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci_numbe
 
 1. Only designed for sorting numbers in ascending order.
 2. Uses `shift()` to get the first item in the array, while removing it, which helps with brevity; however, it's sluggish.
+3. Utilise `concat` to append array of items to `mergeArray`, if low or high has no items.
